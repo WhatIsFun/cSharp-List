@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace cSharp_Lists
 {
@@ -55,6 +56,16 @@ namespace cSharp_Lists
             foreach (int i in numberList)
             {
                 Console.WriteLine(i);
+            }
+
+            // ArrayList:
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add(1);
+            arrayList.Add("Hello");
+            arrayList.Add(new Person(1101, "abc", "Male", 21));
+            foreach(var item in arrayList)
+            {
+                Console.WriteLine(item);
             }
         }
     }
