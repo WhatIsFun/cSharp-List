@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.ComponentModel;
 
 namespace cSharp_Lists
 {
@@ -75,6 +76,9 @@ namespace cSharp_Lists
             intWithDuplicate.Add(3);
             intWithDuplicate.Add(1);
             intWithDuplicate.Add(3);
+            Console.WriteLine($"\r\n~~~~~~~~~~~~~~~~~~\n");
+            Console.WriteLine($"\r\n~~ Task 1 ~~");
+
             Console.WriteLine("The list before removing the duplicates:");
             foreach (int item in intWithDuplicate)
             {
@@ -89,6 +93,54 @@ namespace cSharp_Lists
             {
                 Console.WriteLine(item);
             }
+
+            // Task 2: . Implement a program that takes a list of strings as input and performs the following operations:
+            // a. Remove all elements that contain a specific character specified by the user.
+            // b. Sort the remaining elements in ascending order.
+            // c. Return the modified list.
+
+            List<string> words = new List<string>();    
+            words.Add("Hello");
+            words.Add("World");
+            words.Add("Said");
+            words.Add("abc");
+            Console.WriteLine($"\r\n~~~~~~~~~~~~~~~~~~\n");
+            Console.WriteLine($"\r\n~~ Task 2 ~~\n");
+
+            Console.WriteLine("The list before:");
+            foreach (string item in words)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("\nThe list after removing the words:");
+            words.RemoveAll (s => s.Contains("o"));
+            words.Sort(); 
+            foreach (string item in words)
+            {
+                Console.WriteLine(item);
+            }
+
+            // Task 3: Write a program that finds the maximum value in a list of integers.
+            // Implement a method that accepts the list as input and returns the maximum value.
+
+
+            Console.WriteLine($"\r\n~~~~~~~~~~~~~~~~~~\n");
+            Console.WriteLine($"\r\n~~ Task 3 ~~\n");
+            List<int> num = new List<int>();
+            num.Add(10);
+            num.Add(20);
+            num.Add(40);
+            Console.WriteLine("The Numbers list: ");
+            foreach (int item in num)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine($"\nThe maximum value is {num.Max()}");
+            Console.WriteLine($"\nThe minimum value is {num.Min()}");
+
+
+            
+
 
 
 
