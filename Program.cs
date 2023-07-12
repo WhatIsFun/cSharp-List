@@ -67,6 +67,34 @@ namespace cSharp_Lists
             {
                 Console.WriteLine(item);
             }
+
+            // Task 1: Write a program that takes a list of integers as input and removes duplicate numbers, keeping only the unique elements.
+            // Implement a method that accepts the list and returns a new list containing only the unique elements in the original order.
+            List<int> intWithDuplicate = new List<int>();
+            intWithDuplicate.Add(1);
+            intWithDuplicate.Add(3);
+            intWithDuplicate.Add(1);
+            intWithDuplicate.Add(3);
+            Console.WriteLine("The list before removing the duplicates:");
+            foreach (int item in intWithDuplicate)
+            {
+                Console.WriteLine(item);
+            }
+
+            List<int> uniqueInt = intWithDuplicate.Distinct().ToList();
+
+            Console.WriteLine("The list after removing the duplicates:");
+
+            foreach (int item in uniqueInt)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
+
         }
+
+
     }
 }
