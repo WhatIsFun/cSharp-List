@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "wIRYS2lrW1S+vKAtwKG+c1md2FgXcxAL7ee/h7Ns4CJZLWE0Yu6UI/lvpLBE7ZL6tPpLvh3bT2daMegRAD+0Mg==",
+  "dgSpecHash": "w4usEjrKpSo03BdWOBl+pszdcr+evhkSn0t3OVu9GD+nNV3IAMAIaKR8Cl62cKXKE1wOcAE1bNme1+ku6HD4fA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\code-TRA\\git-starter\\cSharp-Lists\\cSharp-Lists.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\moham\\Source\\Repos\\cSharp-List\\cSharp-Lists.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

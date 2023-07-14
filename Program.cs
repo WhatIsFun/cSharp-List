@@ -113,8 +113,8 @@ namespace cSharp_Lists
                 Console.WriteLine(item);
             }
             Console.WriteLine("\nThe list after removing the words:");
-            words.RemoveAll (s => s.Contains("o"));
-            words.Sort(); 
+            words.RemoveAll(s => s.Contains("o"));
+            words.Sort();
             foreach (string item in words)
             {
                 Console.WriteLine(item);
@@ -138,12 +138,25 @@ namespace cSharp_Lists
             Console.WriteLine($"\nThe maximum value is {num.Max()}");
             Console.WriteLine($"\nThe minimum value is {num.Min()}");
 
+            // Task 4: Write a program that takes a string as an input and is a sentence.
+            // It should return a string with words in reverse order.
+            // Input: Hello!!! World.We are awesome.
+            //Output: awesome.are We World.Hello!!!
+            Console.WriteLine($"\r\n~~~~~~~~~~~~~~~~~~\n");
+            Console.WriteLine($"\r\n~~ Task 4 ~~\n");
+            Console.WriteLine("Enter a sentence: ");
+            string sentnce = Console.ReadLine();
+            char[] separators = new char[] { ' ', '.', ',', '!', '?', ';', ':' };
+            string[] word = sentnce.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            List<string> wordList = new List<string>();
+            wordList.AddRange(word);
+            wordList.Reverse();
+            word.Reverse();
+            string sentnceRev = string.Join(" ", wordList);
 
-            
-
-
-
-
+            // Display the output to the console
+            Console.WriteLine("The sentence with words in reverse order is:");
+            Console.WriteLine(sentnceRev);
 
         }
 
