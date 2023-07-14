@@ -154,10 +154,45 @@ namespace cSharp_Lists
             word.Reverse();
             string sentnceRev = string.Join(" ", wordList);
 
-            // Display the output to the console
             Console.WriteLine("The sentence with words in reverse order is:");
             Console.WriteLine(sentnceRev);
 
+            // Task 5: Implement a program that takes a list of strings as input and checks if each string is a palindrome (reads the same forwards and backwards).
+            // Return a new list containing only the palindromic strings.
+
+            List<string> inputList = new List<string>();
+
+            Console.WriteLine("Please enter some strings (enter 'end' to stop):");
+            string input = Console.ReadLine();
+
+            // Loop until the user enter 'end'
+            while (input != "end")
+            {
+                // To add the input to the list
+                inputList.Add(input);
+                input = Console.ReadLine();
+            }
+            List<string> outputList = new List<string>();
+
+            foreach (string s in inputList)
+            {
+                char[] chars = s.ToCharArray();
+
+                Array.Reverse(chars);
+
+                string reversed = new string(chars); // Convert the reversed array back to a string
+
+                if (s.SequenceEqual(reversed))
+                {
+                    outputList.Add(s); // Add the string to the output list
+
+                }
+            }
+            Console.WriteLine("The following strings are palindromes:");
+            foreach (string p in outputList)
+            {
+                Console.WriteLine(p);
+            }
         }
 
 
